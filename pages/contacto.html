@@ -48,52 +48,43 @@
  <main>
     <section>
         <div class="texto-contactos">
-            <h1>CONTACTANOS!</h1>
+            <h2>CONTACTANOS!</h2>
         </div>
     </section>
-    <section>
-        <form class="formularios">
-            <fieldset>
-                <label for="Nombre">
-                    <span>Nombre</span>
-                    <input type="text"> <br>
-                </label>
-            
-                <label for="Apellido">
-                    <span>Apellido</span>
-                    <input type="text"> <br>
-                </label>
-    
-                <label for="Mail">
-                    <span>Mail de contacto</span>
-                    <input type="email" name="Mail de contacto" id="Mail de contacto"> <br>
-                </label>
-        
-                <label for="Telefono">
-                    <span>Telefono</span>
-                    <input type="text" name="Telefono" id="Telefono"> <br>
-                </label>
-                
-                <label for="Mensaje">
-                    <span>Mensaje</span>
-                    <input type="text" name="Mensaje" id="Mensaje"> <br>
-                </label>
-                
-                <label for="">
-                    <input type="submit" name="" id="">
-                </label>
-            </fieldset>
+    <section class="container "> 
+        <form class="row">
+            <div class="col-12 col-xl-6">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Numero de telefono">
+                </div>
+            </div>
+            <div class="col-12 col-xl-6">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </div>
         </form>
-        <div class="contacto-aparte">
-            <p>Hace click y comunicate con nosotros via Whatsapp</p>
-                <ul>
-                    <li><a href="" class="fa-brands fa-whatsapp"></a></li>
-                </ul>
-        </div>
     </section> 
+    <br><br>
 </main>
-
-<footer>
+<footer class="espacio">
     <div class="pie">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, incidunt.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, incidunt.</p>

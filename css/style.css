@@ -68,7 +68,7 @@ main{
 footer{
     background-color: black;
     display: flex;
-    padding: 15px 15px 15px 15px;
+    padding: 20px;
     width: 100%;
 }    
 
@@ -284,11 +284,10 @@ nav ul li a{
 }
 
 
-.texto-envios h2{
+h2{
     text-align: center;
-    padding-top: 40px;
-    font-size: 50px;
-    
+    padding-top: 30px;
+    font-size: 40px;
 }
 
 .texto-envios {
@@ -324,4 +323,8 @@ nav ul li a{
     height: 800px;
     background-size: cover;
     padding: 10px 40px;
+}
+
+.espacio{
+    margin-top: 16px;
 }
