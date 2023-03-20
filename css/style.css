@@ -9,13 +9,12 @@
 }
 
 header{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
 }
-    
 
 main{
     background-color: black;
@@ -32,6 +31,13 @@ main{
     padding: 300px 100px 200px 300px;
     line-height: 40px;
     flex-direction: column;
+}
+
+.contenedor-texto{
+    background-color: rgba(0, 0, 0, 0.353);
+    width: 100%;
+    height: 100%;
+
 }
 
 .parrafo-inicio-dos{ 
@@ -56,7 +62,7 @@ main{
 footer{
     background-color: black;
     display: flex;
-    padding: 15px 15px 15px 15px;
+    padding: 20px;
     width: 100%;
 }    
 
@@ -65,7 +71,7 @@ footer{
 }      
 
 .barra-navegacion{
-    text-align: right;
+    text-align: center;
 }
 
 nav{
@@ -84,7 +90,7 @@ nav{
 
 .menu-horizontal li a{
     display: block;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     color: white;
     text-decoration: none;
 }
@@ -112,10 +118,10 @@ nav{
 .menu-vertical li a{
     display: flex;
     justify-content: right;
+    display: block;
     color: white;
-    padding: 15px 15px 15px 20px;
+    padding: none;
     text-decoration: none;
-
 }
 
 nav ul li{
@@ -255,30 +261,11 @@ nav ul li a{
     padding: 50px;
 }
 
-.contacto-aparte{
-    background-color: rgb(172, 171, 171);
-    padding: 40px;
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-    border-radius: 50px;
-    text-align: center;
-    position: relative;
-    left: 1100px;
-    bottom: 50px;
-}
 
-.contacto-aparte ul li a{
-    padding: 10px;
+h2{
+    text-align: center;
+    padding-top: 30px;
     font-size: 40px;
-}
-
-
-.texto-envios h2{
-    text-align: center;
-    padding-top: 40px;
-    font-size: 50px;
-    
 }
 
 .texto-envios {
@@ -295,23 +282,14 @@ nav ul li a{
     line-height: 40px;
 }
 
-@media (min-width:768px){
-    header{
-        width: 100%;
-    }
-    
-    main{
-        width: 100%;
-    }
-    
-    footer{
-        width: 100%;
-    }
-}
-
 .fotos{
     width: 100%;
     height: 800px;
     background-size: cover;
     padding: 10px 40px;
 }
+
+.contenedor-envios{
+    background-color: rgba(0, 0, 0, 0.353);
+}
+
