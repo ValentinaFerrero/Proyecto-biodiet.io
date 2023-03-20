@@ -11,23 +11,11 @@
 header{
     background-color: black;
     width: 100%;
-    flex-direction: column;
-}
-
-.titulo{
-    padding-left: 50px;
-    position: relative;
+    height: 100px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 }
-
-.logo{
-    font-size: 40px;
-    position: relative;
-    padding-left: 10px;
-    display: flex;
-}
-        
+    
 
 main{
     background-color: black;
@@ -90,7 +78,8 @@ nav{
 .menu-horizontal{
     list-style: none;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    padding-top: 15px;
 }
 
 .menu-horizontal li a{
@@ -122,6 +111,7 @@ nav{
 
 .menu-vertical li a{
     display: flex;
+    justify-content: right;
     color: white;
     padding: 15px 15px 15px 20px;
     text-decoration: none;
