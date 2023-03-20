@@ -9,25 +9,12 @@
 }
 
 header{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 100%;
-    flex-direction: column;
-}
-
-.titulo{
-    padding-left: 50px;
-    position: relative;
+    height: 80px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 }
-
-.logo{
-    font-size: 40px;
-    position: relative;
-    padding-left: 10px;
-    display: flex;
-}
-        
 
 main{
     background-color: black;
@@ -39,11 +26,17 @@ main{
     background-size: cover;
     width: 100%;
     height: 100%;
-    text-align: right;
+    text-align: center;
     display: flex;
     padding: 300px 100px 200px 300px;
     line-height: 40px;
     flex-direction: column;
+}
+
+.contenedor-texto{
+    background-color: rgba(128, 128, 128, 0.442);
+    width: 100%;
+    height: 100%;
 }
 
 .parrafo-inicio-dos{ 
@@ -77,7 +70,7 @@ footer{
 }      
 
 .barra-navegacion{
-    text-align: right;
+    text-align: center;
 }
 
 nav{
@@ -95,7 +88,7 @@ nav{
 
 .menu-horizontal li a{
     display: block;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     color: white;
     text-decoration: none;
 }
@@ -121,7 +114,7 @@ nav{
 }
 
 .menu-vertical li a{
-    display: flex;
+    display: block;
     color: white;
     padding: 15px 15px 15px 20px;
     text-decoration: none;
@@ -278,11 +271,6 @@ nav ul li a{
     bottom: 50px;
 }
 
-.contacto-aparte ul li a{
-    padding: 10px;
-    font-size: 40px;
-}
-
 
 h2{
     text-align: center;
@@ -304,27 +292,9 @@ h2{
     line-height: 40px;
 }
 
-@media (min-width:768px){
-    header{
-        width: 100%;
-    }
-    
-    main{
-        width: 100%;
-    }
-    
-    footer{
-        width: 100%;
-    }
-}
-
 .fotos{
     width: 100%;
     height: 800px;
     background-size: cover;
     padding: 10px 40px;
-}
-
-.espacio{
-    margin-top: 16px;
 }
