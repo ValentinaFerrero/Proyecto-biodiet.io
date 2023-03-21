@@ -26,19 +26,13 @@ main{
     background-size: cover;
     width: 100%;
     height: 100%;
-    text-align: right;
+    text-align: left;
     display: flex;
-    padding: 300px 100px 200px 300px;
+    padding: 300px 300px 200px 100px;
     line-height: 40px;
     flex-direction: column;
 }
 
-.contenedor-texto{
-    background-color: rgba(0, 0, 0, 0.353);
-    width: 100%;
-    height: 100%;
-
-}
 
 .parrafo-inicio-dos{ 
     background-image: url(../assets/img/comida.jpg);
@@ -64,6 +58,7 @@ footer{
     display: flex;
     padding: 20px;
     width: 100%;
+    text-align: center;
 }    
 
 .pie {
@@ -136,12 +131,12 @@ nav ul li a{
     width: 100%;
 }      
 
-.textos-productos{
+.texto-productos{
     text-align: center;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0px ;
+    padding: 150px;
     font-size: 25px;
     line-height: 40px;
 }
@@ -152,75 +147,54 @@ nav ul li a{
     font-size: 30px;
 }
 
-.imagen-boton{
+.grids{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    row-gap: 50px;
+    column-gap: 10px;
+    background-color: black;
+    padding: 20px 40px 0px 40px;
+}
+
+.imagen-uno{
     background-image: url(../assets/img/productos1.jpg);
     background-size: cover;
-    width: 400px;
-    height: 500px;
-    background-repeat: no-repeat;
-    
 }
 
-.boton-compra{
-    background-color: rgba(168, 167, 167, 0.59);
-    padding: 10px;
-    border-radius: 30px;
-}
-
-.imagen-boton-2{
+.imagen-dos{
     background-image: url(../assets/img/productos2.jpg);
     background-size: cover;
-    width: 400px;
-    height: 500px;
-    background-repeat: no-repeat;
 }
 
-
-.imagen-boton-3{
+.imagen-tres{
     background-image: url(../assets/img/productos3.jpg);
     background-size: cover;
-    width: 400px;
-    height: 500px;
-    background-repeat: no-repeat;
 }
 
-.imagen-boton-4{
+.imagen-cuatro{
     background-image: url(../assets/img/productos4.jpg);
     background-size: cover;
-    width: 400px;
-    height: 500px;
-    background-repeat: no-repeat;
 }
 
-.imagen-boton-5{
-    background-image: url(../assets/img/producto5.png);
+.imagen-cinco{
+    background-image: url(../assets/img/frutas.jpg);
     background-size: cover;
-    width: 400px;
-    height: 500px;
-    background-repeat: no-repeat;
 }
 
-
-.imagen-boton-6{
+.imagen-seis{
     background-image: url(../assets/img/producto6.png);
     background-size: cover;
-    width: 400px;
-    height: 500px;
-    background-repeat: no-repeat;
 }
 
 
-.titulo-productos{
-    padding-bottom: 50px;
-    padding-top: 50px;
-    text-align: center;
-    font-size:35px;
-}
-
-.productos img{
+.boton{
+    background-color: rgba(168, 167, 167, 0.59);
+    border-radius: 20px;
     padding: 10px;
-    margin: 10px;
 }
+
 
 .textos-quienes{
     text-align: center;
