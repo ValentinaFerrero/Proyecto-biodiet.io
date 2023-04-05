@@ -9,64 +9,77 @@
     padding: 200px 100px;
     width: 100%;
     height: 100%;
-}
-
-.fondo{
-    background-color: rgba(0, 0, 0, 0.342);
-    padding: 80px;
-}
-
-.texto-envios h2{
-    text-align: center;
-}
-
-.texto-envios p{
-    text-align: center;
+    .fondo{
+        background-color: rgba(0, 0, 0, 0.342);
+        padding: 80px;
+        .texto-envios{
+            text-align: center;
+            p{
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
 }
 
 @media (max-width:1024px){
     main{
         width: 100%;
         height: 100%;
-    }
-    .texto-envios div{
-        font-size: 20px;
+        .contenedor-envios{
+            div{
+                .texto-envios{
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
 @media(max-width:768px){
-    .texto-envios h2{
-        text-align: center;
-    }
-    .texto-envios p{
-        font-size: 15px;
-    }    
-
     .contenedor-envios{
-        background-position: center center;   
+        background-position: center center;  
+        div{
+            .texto-envios{
+                h2{
+                    text-align: center;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }
 
 @media(max-width:495px){
     .contenedor-envios{
         padding: 130px 50px;
-    }
-    
-    .texto-envios p{
-        font-size: 12px;
+        div{
+            .texto-envios{
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
     }
 }
 
 @media (max-width:320px){
     main{
         width: 100%;
+        div{
+            .texto-envios{
+                h2{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 9px;
+                    padding: none;
+                }
+            }
+        }
     }
-    .texto-envios p{
-        font-size: 9px;
-        padding: none;
-    }
-   .texto-envios h2{
-    font-size: 20px;
-   }
 }
 
 

@@ -1,20 +1,23 @@
 /*cuerpo de pag de contactos*/
 
-
-.texto-contactos{
-    padding: 50px;
+main{
+    section{
+        .texto-contactos{
+            padding: 50px;
+            h2{
+                text-align: center;
+                padding-top: 30px;
+                font-size: 40px;
+            }
+        }
+    }
 }
 
-
-.texto-contactos h2{
-    text-align: center;
-    padding-top: 30px;
-    font-size: 40px;
-}
 
 @media (max-width:768px){
-    .texto-contactos h2{
-        font-size: 30px;
+    .texto-contactos{
+        h2{
+            font-size: 30px;
+        }
     }
-
 }
