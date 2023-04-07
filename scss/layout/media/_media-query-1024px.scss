@@ -1,0 +1,42 @@
+/*media query index*/
+@media (max-width:1024px){
+    .primer.foto{
+        h2{
+        width: $width;
+        font-size: 20px;
+        padding: 20px 100px 15px 30px;
+        display: $flex;
+        }
+        p{
+        width: $width;
+        font-size: 13px;
+        padding: 20px 80px 15px 48px;
+        display: $flex;
+        }
+        a{
+        font-size: 13px;
+        padding: 5px 0px 15px 48px;
+        }
+    }
+    .segunda-foto{
+        p{
+            font-size: 20px;
+            padding: 140px;
+        }
+    }
+}
+
+/*media query main envios*/
+@media (max-width:1024px){
+    main{
+        width: $width;
+        height: 100%;
+        .contenedor-envios{
+            div{
+                .texto-envios{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

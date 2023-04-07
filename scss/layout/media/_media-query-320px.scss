@@ -1,0 +1,84 @@
+/*media query 375-320px main index*/
+@media (max-width:375px){
+    main{
+        section.segunda-foto{
+            p{
+                font-size: 9px;
+                padding: 70px;
+            }
+        }
+    }
+}
+
+@media (max-width:320px){
+    
+
+        .primer-foto{
+            font-size: 0.2rem;
+        }
+    
+    .segunda-foto{
+        p{
+            font-size: 7px;
+            padding: 70px;
+            width: $width;
+        }
+    }
+}
+
+/*main envios*/
+
+
+@media(max-width:495px){
+    .contenedor-envios{
+        padding: 130px 50px;
+        div{
+            .texto-envios{
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:320px){
+    main{
+        width: $width;
+        div.texto-envios{
+                h2{
+                    font-size: 20px;
+                }
+            }
+        div.texto-envios{
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+/*main contactos*/
+@media (max-width:375px){
+    main{
+        section{
+            div.texto-contactos{
+                h2{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:320px){
+    main{
+        section{
+            div.texto-contactos{
+                h2{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

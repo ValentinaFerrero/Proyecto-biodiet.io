@@ -1,0 +1,71 @@
+/*media query header*/
+@media (max-width: 786px){
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 10px;
+                    }
+                }
+            }
+            .enlace{
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+/*media query main index*/
+@media (max-width:768px){
+    main{
+        section.primer-foto{
+                h2{
+                    font-size: 20px;
+                    display: $flex;
+                    padding: 20px 80px 0px 25px;
+                }
+                p{
+                    font-size: 12px;
+                    padding: 10px 80px 0px 25px;
+                }
+                a{
+                    font-size: 12px;
+                    padding: 0px 0px 0 25px
+                }
+            } 
+            .segunda-foto{
+                p{
+                    display: $flex;
+                    font-size: 12px;
+                    padding: 130px
+                }
+            }
+        }
+}
+
+/*main envios*/
+@media(max-width:768px){
+    .contenedor-envios{
+        background-position: center center;  
+        div{
+            .texto-envios{
+                h2{
+                    text-align: center;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+/*main contactos*/
+@media (max-width:768px){
+    .texto-contactos{
+        h2{
+            font-size: 30px;
+        }
+    }
+}
