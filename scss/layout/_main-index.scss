@@ -1,19 +1,19 @@
 /*comienzo cuerpo del texto del sitio*/
 
 main{
-    background-color: black;
-    width: 100%;
+    background-color: $fondo;
+    width: $width;
     height: 100%;
     .primer-foto{
         background: url(../assets/img/pagina-principal.jpg) no-repeat;
         background-size: cover;
         background-position: center center;
         height: 35rem;
-        width: 100%;
+        width: $width;
         h2{
             font-size: 2rem;
             line-height: 2rem;
-            display: flex;
+            display: $flex;
             text-align: left;
             padding: 50px 50px 0px 50px; 
         }
@@ -21,13 +21,13 @@ main{
             font-size: 1.3rem;
             flex-direction: column;
             line-height: 2rem;
-            display: flex;
+            display: $flex;
             text-align: left;
             padding: 10px 50px 0px 50px;
         }
         a{
             font: 1.3rem;
-            display: flex;
+            display: $flex;
             text-align: left;
             padding: 10px 0 0 50px;
             }
@@ -38,14 +38,7 @@ main{
         background-position: center center;
         height: calc(100vh - 80px);
         p{
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            line-height: 2rem;
-            font-size: 25px;
-            padding: 170px;
-            display: flex;
-            width: 100%;
+            @include centrado(25px, 170px);
         }
     }
 }
@@ -54,16 +47,16 @@ main{
 @media (max-width:1024px){
     .primer.foto{
         h2{
-        width: 100%;
+        width: $width;
         font-size: 20px;
         padding: 20px 100px 15px 30px;
-        display: flex;
+        display: $flex;
         }
         p{
-        width: 100%;
+        width: $width;
         font-size: 13px;
         padding: 20px 80px 15px 48px;
-        display: flex;
+        display: $flex;
         }
         a{
         font-size: 13px;
@@ -82,7 +75,7 @@ main{
     .primer-foto{
         h2{
             font-size: 15px;
-            display: flex;
+            display: $flex;
             padding: 20px 80px 0px 25px;
         }
         p{
@@ -145,7 +138,7 @@ main{
         p{
             font-size: 7px;
             padding: 70px;
-            width: 100%;
+            width: $width;
         }
     }
 }

@@ -1,8 +1,8 @@
 header{
     nav{
-        background-color: black;
+        background-color: $fondo;
         height: 80px;
-        width: 100%;
+        width: $width;
         .enlace{
             position: absolute;
             padding: 20px 50px;
@@ -74,7 +74,7 @@ header{
         }
         ul{
             display: block;
-            width: 100%;
+            width: $width;
             height: 100vh;
             background-color: rgb(0, 0, 0);
             top: 80px;

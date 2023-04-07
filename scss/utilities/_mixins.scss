@@ -1,0 +1,10 @@
+@mixin centrado($font, $padding){
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem;
+    font-size: $font;
+    padding: $padding;
+    display: flex;
+    width: 100%;
+}

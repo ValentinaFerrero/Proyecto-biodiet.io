@@ -10,55 +10,49 @@ main{
         }  
         section.grids{
             display: grid;
-            width: 100%;
+            width: $width;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 500px 500px;
             row-gap: 50px;
             column-gap: 10px;
-            background-color: black;
+            background-color: $fondo;
             padding: 20px 40px 0px 40px;
             .imagen-uno{
                 background-image: url(../assets/img/productos1.jpg);
-                
+                background-size: $cover;
+
+            }
+            .imagen-dos{
+                background-image: url(../assets/img/productos2.jpg);
+                background-size: $cover;
+
+            }
+            .imagen-tres{
+                background-image: url(../assets/img/productos3.jpg);
+                background-size: $cover;
+
+            }
+            .imagen-cuatro{
+                background-image: url(../assets/img/productos4.jpg);
+                background-size: $cover;
+
+            }
+            .imagen-cinco{
+                background-image: url(../assets/img/frutas.jpg);
+                background-size: $cover;
+
+            }
+            .imagen-seis{
+                background-image: url(../assets/img/producto6.png);
+                background-size: $cover;
+            }
+            .boton{
+                display: $flex;
+                justify-content: center;
+                background-color: rgba(168, 167, 167, 0.59);
+                border-radius: 20px;
+                padding: 10px;
             }
         } 
     }
-}
-
-
-.imagen-uno{
-    background-image: url(../assets/img/productos1.jpg);
-    background-size: cover;
-}
-
-.imagen-dos{
-    background-image: url(../assets/img/productos2.jpg);
-    background-size: cover;
-}
-
-.imagen-tres{
-    background-image: url(../assets/img/productos3.jpg);
-    background-size: cover;
-}
-
-.imagen-cuatro{
-    background-image: url(../assets/img/productos4.jpg);
-    background-size: cover;
-}
-
-.imagen-cinco{
-    background-image: url(../assets/img/frutas.jpg);
-    background-size: cover;
-}
-
-.imagen-seis{
-    background-image: url(../assets/img/producto6.png);
-    background-size: cover;
-}
-
-
-.boton{
-    background-color: rgba(168, 167, 167, 0.59);
-    border-radius: 20px;
-    padding: 10px;
 }

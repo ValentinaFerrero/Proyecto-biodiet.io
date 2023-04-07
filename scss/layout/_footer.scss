@@ -1,29 +1,29 @@
 /*comienzo pie de pagina*/
 
 footer{
-    background-color: black;
-    display: flex;
+    background-color: $fondo;
+    display: $flex;
     padding: 20px;
-    width: 100%;
+    width: $width;
     height: 100%;
     text-align: center;
     .pie{
-        display: flex;
+        display: $flex;
     }
 }    
 
 @media (max-width: 320){
     footer{
-        width: 100%;
+        width: $width;
         font-size: 7px;
     }
 }
 
 @media (max-width:600px){
     footer{
-        width: 100%;
+        width: $width;
         div{
-            display: flex;
+            display: $flex;
             p{
                 font-size: 10px;
             }
@@ -33,7 +33,7 @@ footer{
 
 @media (max-width:768px){
     footer div{
-        display: flex;
+        display: $flex;
         p{
             font-size: 0.8rem;
         }

@@ -1,21 +1,12 @@
 /*cuerpo pag de quienes somos*/
 main{
     section{
-        .texto-quienes{
-            h2{
-                text-align: center;
-                justify-content: center;
-                padding-top: 40px;
-                font-size: 30px;
+        div.textos-quienes{
+            h3{
+            @include centrado(30px, 10px);
             }
             p{
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 00px 200px 10px 200px;
-                font-size: 25px;
-                line-height: 40px;
+            @include centrado(25px, 10px 70px 70px 70px);
             }
         }
     }

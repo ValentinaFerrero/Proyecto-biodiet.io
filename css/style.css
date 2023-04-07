@@ -323,59 +323,56 @@ main div section.grids {
 }
 main div section.grids .imagen-uno {
   background-image: url(../assets/img/productos1.jpg);
-}
-
-.imagen-uno {
-  background-image: url(../assets/img/productos1.jpg);
   background-size: cover;
 }
-
-.imagen-dos {
+main div section.grids .imagen-dos {
   background-image: url(../assets/img/productos2.jpg);
   background-size: cover;
 }
-
-.imagen-tres {
+main div section.grids .imagen-tres {
   background-image: url(../assets/img/productos3.jpg);
   background-size: cover;
 }
-
-.imagen-cuatro {
+main div section.grids .imagen-cuatro {
   background-image: url(../assets/img/productos4.jpg);
   background-size: cover;
 }
-
-.imagen-cinco {
+main div section.grids .imagen-cinco {
   background-image: url(../assets/img/frutas.jpg);
   background-size: cover;
 }
-
-.imagen-seis {
+main div section.grids .imagen-seis {
   background-image: url(../assets/img/producto6.png);
   background-size: cover;
 }
-
-.boton {
+main div section.grids .boton {
+  display: flex;
+  justify-content: center;
   background-color: rgba(168, 167, 167, 0.59);
   border-radius: 20px;
   padding: 10px;
 }
 
 /*cuerpo pag de quienes somos*/
-main section .texto-quienes h2 {
+main section div.textos-quienes h3 {
   text-align: center;
-  justify-content: center;
-  padding-top: 40px;
-  font-size: 30px;
-}
-main section .texto-quienes p {
-  text-align: center;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0px 200px 10px 200px;
+  justify-content: center;
+  line-height: 2rem;
+  font-size: 30px;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+}
+main section div.textos-quienes p {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 2rem;
   font-size: 25px;
-  line-height: 40px;
+  padding: 10px 70px 70px 70px;
+  display: flex;
+  width: 100%;
 }
 
 /*comienzo pie de pagina*/
