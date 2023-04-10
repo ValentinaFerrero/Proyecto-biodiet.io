@@ -73,3 +73,19 @@
         }
     }
 }
+
+/*main quienes somos*/
+@media (max-width:600px){
+    main{
+        section{
+            div.texto-quienes{
+                h3{
+                    @include centrado(1.3rem, 10px);
+                }
+                p{
+                    @include centrado(1rem, 10px);
+                }
+            }
+        }
+    }
+}

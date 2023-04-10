@@ -82,3 +82,34 @@
         }
     }
 }
+
+/*main quienes somos*/
+@media (max-width:320px){
+    main{
+        section{
+            div.textos-quienes{
+                h3{
+                    font-size: 10px;
+                }
+                p{
+                    @include centrado(0.7rem, 10px)
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:375px){
+    main{
+        section{
+            div.textos-quienes{
+                h3{
+                    font-size: 10px;
+                }
+                p{
+                    @include centrado(0.9rem, 10px)
+                }
+            }
+        }
+    }
+}

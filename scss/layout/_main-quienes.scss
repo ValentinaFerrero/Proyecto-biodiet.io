@@ -3,7 +3,7 @@ main{
     section{
         div.textos-quienes{
             h3{
-            @include centrado(30px, 10px);
+            @include centrado(30px, 30px);  
             }
             p{
             @include centrado(25px, 10px 70px 70px 70px);
