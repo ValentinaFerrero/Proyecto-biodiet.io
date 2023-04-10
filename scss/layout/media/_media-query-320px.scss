@@ -32,31 +32,28 @@
 @media(max-width:495px){
     .contenedor-envios{
         padding: 130px 50px;
-        div{
-            .texto-envios{
+        div.texto-envios{
                 p{
-                    font-size: 12px;
+                    font-size: 15px;
                 }
-            }
         }
     }
 }
 
 @media (max-width:320px){
-    main{
-        width: $width;
-        div.texto-envios{
-                h2{
-                    font-size: 20px;
-                }
+    .contenedor-envios{
+        .fondo{
+            .titulo-envios{
+                font-size: 12px;
             }
-        div.texto-envios{
-            p{
+            .texto-envios{
                 font-size: 10px;
             }
         }
     }
 }
+
+
 
 /*main contactos*/
 @media (max-width:375px){

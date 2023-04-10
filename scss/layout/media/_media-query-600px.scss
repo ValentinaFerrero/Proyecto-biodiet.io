@@ -2,15 +2,14 @@
 @media (max-width: 600px){
     nav{
         position: fixed;
-        label{
-            .checkbtn{
+        label.checkbtn{
                 display: block;
             }
             i{
                 font-size: 20px;
                 padding-top: 40px;
             }
-        }
+        
         ul{
             display: block;
             width: $width;
@@ -29,19 +28,17 @@
                     font-size: 15px;
                     background: none;
                     color: rgb(230, 11, 11);
-                    .active{
-                        background: none;
-                        color: rgb(230, 11, 11);
-                    }
                 }
-
+                .active{
+                    background: none;
+                    color: rgb(230, 11, 11);
+                }
             }
         }
-        input{
-            #check:checked ~ ul{
+        input#check:checked ~ ul{
                 left:0;
             }
-        }
+        
     }
     
 }
