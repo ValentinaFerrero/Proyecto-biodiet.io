@@ -19,7 +19,7 @@ main{
         ;         
         h2{
             grid-area: item1;
-            font-size: 3rem;
+            font-size: 2.8rem;
             line-height: 2rem;
             display: $flex;
             padding: 150px 50px 10px 50px; 
@@ -36,7 +36,7 @@ main{
         }
         p{
             grid-area: item3;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             display: $flex;
             justify-self: left;
             align-self: center;

@@ -70,7 +70,7 @@ main .contenedor-index {
 }
 main .contenedor-index h2 {
   grid-area: item1;
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 2rem;
   display: flex;
   padding: 150px 50px 10px 50px;
@@ -87,7 +87,7 @@ main .contenedor-index h3 {
 }
 main .contenedor-index p {
   grid-area: item3;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   display: flex;
   justify-self: left;
   align-self: center;
@@ -227,8 +227,14 @@ footer {
 footer .pie {
   display: flex;
 }
+footer a {
+  color: white;
+  font-size: 10px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
 
-@media (max-width: 320) {
+@media (max-width: 320px) {
   footer {
     width: 100%;
     font-size: 7px;
@@ -292,19 +298,19 @@ footer .pie {
 }
 /*media query main index*/
 @media (max-width: 768px) {
-  main section.contendor-index h2 {
-    font-size: 20px;
+  main section.contendor-index div h2 {
+    font-size: 10px;
     display: flex;
-    padding: 20px 80px 0px 25px;
+    padding: 0px 80px 0px 25px;
   }
-  main section.contendor-index h3 {
+  main section.contendor-index div h3 {
     font-size: 10px;
   }
-  main section.contendor-index p {
+  main section.contendor-index div p {
     font-size: 12px;
     padding: 10px 80px 0px 25px;
   }
-  main .segunda-foto p {
+  main section.contendor-index .segunda-foto p {
     display: flex;
     font-size: 15px;
     padding: 180px;
@@ -336,7 +342,7 @@ footer .pie {
   nav label.checkbtn {
     display: block;
   }
-  nav i {
+  nav label i {
     font-size: 20px;
     padding-top: 40px;
   }
@@ -352,12 +358,12 @@ footer .pie {
     position: absolute;
   }
   nav ul li {
-    display: block;
+    display: flex;
     margin: 50px 0;
     line-height: 5px;
   }
   nav ul li a:hover {
-    font-size: 15px;
+    font-size: 50px;
     background: none;
     color: rgb(230, 11, 11);
   }

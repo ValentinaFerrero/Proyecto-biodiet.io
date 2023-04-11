@@ -5,7 +5,7 @@
         label.checkbtn{
                 display: block;
             }
-            i{
+        label i{
                 font-size: 20px;
                 padding-top: 40px;
             }
@@ -21,11 +21,11 @@
             transition: all .5s;
             position: absolute;
             li{
-                display: block;
+                display: flex;
                 margin: 50px 0;
                 line-height: 5px;
                 a:hover{
-                    font-size: 15px;
+                    font-size: 50px;
                     background: none;
                     color: rgb(230, 11, 11);
                 }
