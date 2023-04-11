@@ -4,34 +4,49 @@ main{
     background-color: $fondo;
     width: $width;
     height: 100%;
-    .primer-foto{
-        background: url(../assets/img/pagina-principal.jpg) no-repeat;
+    .contenedor-index{
+        background: url(../assets/img/imagenes.jpg) no-repeat;
         background-size: cover;
-        background-position: center center;
-        height: 35rem;
+        height: calc(100vh - 80px);
+        display: grid;
         width: $width;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px 150px 100px ;
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        ;         
         h2{
-            font-size: 2rem;
+            grid-area: item1;
+            font-size: 3rem;
             line-height: 2rem;
             display: $flex;
-            text-align: left;
-            padding: 50px 50px 0px 50px; 
+            padding: 150px 50px 10px 50px; 
+            align-self: center;
+            justify-self: left;
+        }
+        h3{
+            font-size: 2rem;
+            grid-area: item2;
+            display: $flex;
+            justify-self: left;
+            align-self: center;
+            padding: 0px 50px;
         }
         p{
+            grid-area: item3;
             font-size: 1.3rem;
-            flex-direction: column;
-            line-height: 2rem;
             display: $flex;
-            text-align: left;
-            padding: 10px 50px 0px 50px;
+            justify-self: left;
+            align-self: center;
+            padding: 0px 50px;
         }
-        a{
-            font: 1.3rem;
-            display: $flex;
-            text-align: left;
-            padding: 10px 0 0 50px;
-            }
-        }
+        
+        
+    }
+    
+}
     .segunda-foto{
         background: url(../assets/img/comida.jpg);
         background-size: cover;
@@ -41,5 +56,4 @@ main{
             @include centrado(25px, 170px);
         }
     }
-}
 

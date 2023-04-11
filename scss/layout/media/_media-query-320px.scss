@@ -1,26 +1,23 @@
 /*media query 375-320px main index*/
-@media (max-width:375px){
+@media (max-width:425px){
     main{
         section.segunda-foto{
             p{
-                font-size: 9px;
-                padding: 70px;
+                font-size: 13px;
+                padding: 80px;
             }
         }
     }
 }
 
 @media (max-width:320px){
-    
-
-        .primer-foto{
-            font-size: 0.2rem;
-        }
-    
+    .primer-foto{
+        font-size: 0.2rem;
+    }
     .segunda-foto{
         p{
             font-size: 7px;
-            padding: 70px;
+            padding: 80px;
             width: $width;
         }
     }
