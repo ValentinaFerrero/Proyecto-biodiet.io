@@ -34,15 +34,15 @@
                     padding: 10px 80px 0px 25px;
                 }
             } 
-            .segunda-foto{
-                p{
-                    display: $flex;
-                    font-size: 15px;
-                    padding: 180px
-                }
-            }
+        }
+        section.segunda-foto{
+            p{
+                display: $flex;
+                font-size: 15px;
+                padding: 130px
             }
         }
+    }
 }
 
 /*main envios*/
@@ -70,3 +70,4 @@
         }
     }
 }
+

@@ -261,20 +261,28 @@ footer a {
 }
 /*media query index*/
 @media (max-width: 1024px) {
-  .contenedor-index h2 {
+  main {
     width: 100%;
-    font-size: 10px;
-    display: flex;
   }
-  .contenedor-index p {
+  main section.contenedor-index h2 {
     width: 100%;
-    font-size: 13px;
-    padding: 20px 80px 15px 48px;
+    font-size: 35px;
     display: flex;
+    padding: 50px 0px 0px 50px;
   }
-  .segunda-foto p {
+  main section.contenedor-index h3 {
+    font-size: 30px;
+    padding: 0px 0px 0px 50px;
+  }
+  main section.contenedor-index p {
+    width: 100%;
     font-size: 20px;
-    padding: 200px;
+    padding: 0px 0px 0px 50px;
+    display: flex;
+  }
+  main section.segunda-foto p {
+    font-size: 20px;
+    padding: 140px;
   }
 }
 /*media query main envios*/
@@ -310,10 +318,10 @@ footer a {
     font-size: 12px;
     padding: 10px 80px 0px 25px;
   }
-  main section.contendor-index .segunda-foto p {
+  main section.segunda-foto p {
     display: flex;
     font-size: 15px;
-    padding: 180px;
+    padding: 130px;
   }
 }
 /*main envios*/
@@ -377,22 +385,23 @@ footer a {
 }
 /*media query main index*/
 @media (max-width: 600px) {
-  main section.primer-foto h2 {
-    font-size: 15px;
-    padding: 20px 80px 0px 25px;
+  main section.contenedor-index h2 {
+    font-size: 30px;
+    padding: 100px 0px 0px 30px;
   }
-  main section.primer-foto p {
-    padding: 60px 60px 10px 60px;
-    font-size: 10px;
+  main section.contenedor-index h3 {
+    font-size: 25px;
+    padding: 0px 0px 0px 30px;
+  }
+  main section.contenedor-index p {
+    padding: 0px 0px 0px 30px;
+    font-size: 20px;
     line-height: 20px;
     width: 100%;
   }
-  main section.primer-foto a {
-    padding: 0px 60px 60px 60px;
-  }
-  main .segunda-foto p {
-    padding: 110px;
-    font-size: 14px;
+  main section.segunda-foto p {
+    padding: 90px;
+    font-size: 13px;
   }
 }
 /*main quienes somos*/
@@ -420,17 +429,52 @@ footer a {
 }
 /*media query 375-320px main index*/
 @media (max-width: 425px) {
+  main {
+    width: 100%;
+  }
+  main section.contenedor-index div h2 {
+    font-size: 30px;
+    padding: 100px 0px 0px 30px;
+  }
+  main section.contenedor-index div h3 {
+    font-size: 23px;
+    padding: 5px 0px 0px 30px;
+  }
+  main section.contenedor-index div p {
+    font-size: 16px;
+    padding: 0px 0px 0px 30px;
+  }
   main section.segunda-foto p {
-    font-size: 13px;
+    font-size: 12px;
     padding: 80px;
   }
 }
 @media (max-width: 320px) {
-  .primer-foto {
-    font-size: 0.2rem;
+  main section.contenedor-index div h2 {
+    font-size: 25px;
   }
-  .segunda-foto p {
-    font-size: 7px;
+  main section.contenedor-index div h3 {
+    font-size: 20px;
+  }
+  main section.contenedor-index div p {
+    font-size: 14px;
+  }
+  main section.segunda-foto p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  main section.contenedor-index div h2 {
+    font-size: 25px;
+  }
+  main section.contenedor-index div h3 {
+    font-size: 20px;
+  }
+  main section.contenedor-index div p {
+    font-size: 14px;
+  }
+  main section.segunda-foto p {
+    font-size: 9px;
     padding: 80px;
     width: 100%;
   }

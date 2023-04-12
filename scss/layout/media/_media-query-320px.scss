@@ -1,9 +1,26 @@
 /*media query 375-320px main index*/
 @media (max-width:425px){
     main{
+        width: $width;
+        section.contenedor-index{
+            div{
+                h2{
+                    font-size: 30px;
+                    padding: 100px 0px 0px 30px;
+                }
+                h3{
+                    font-size: 23px;
+                    padding: 5px 0px 0px 30px;
+                }
+                p{
+                    font-size: 16px;
+                    padding: 0px 0px 0px 30px;
+                }
+            }
+        }
         section.segunda-foto{
             p{
-                font-size: 13px;
+                font-size: 12px;
                 padding: 80px;
             }
         }
@@ -11,14 +28,49 @@
 }
 
 @media (max-width:320px){
-    .primer-foto{
-        font-size: 0.2rem;
+    main{
+        section.contenedor-index{
+            div{
+                h2{
+                    font-size: 25px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+        section.segunda-foto{
+            p{
+                font-size: 14px;
+            }
+        }
     }
-    .segunda-foto{
-        p{
-            font-size: 7px;
-            padding: 80px;
-            width: $width;
+}
+
+@media (max-width:375px){
+    main{
+        section.contenedor-index{
+            div{
+                h2{
+                    font-size: 25px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+        section.segunda-foto{
+            p{
+                font-size: 9px;
+                padding: 80px;
+                width: $width;
+            }
         }
     }
 }
