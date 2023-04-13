@@ -10,7 +10,7 @@
 
 header nav {
   background-color: black;
-  height: 80px;
+  height: 90px;
   width: 100%;
 }
 header nav .enlace {
@@ -21,19 +21,26 @@ header nav .logo {
   height: 50px;
 }
 header nav ul {
-  float: right;
-  margin-right: 20px;
+  position: absolute;
+  top: 0px;
+  left: 700px;
+  display: flex;
 }
 header nav ul li {
   display: inline-block;
-  line-height: 80px;
-  margin: 15px 5px;
+  line-height: 20px;
+  margin: 25px 5px;
 }
 header nav ul li a {
   color: white;
   font-size: 1.1rem;
-  padding: 7px 13px;
   border-radius: 3px;
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  z-index: 1;
 }
 header nav ul li a.active, header nav ul li a:hover {
   background-color: gray;
@@ -93,14 +100,17 @@ main .contenedor-index p {
   align-self: center;
   padding: 0px 50px;
 }
-
-.segunda-foto {
+main section.carrusel-index {
+  background-size: cover;
+  margin: 5px 0px;
+}
+main section.segunda-foto {
   background: url(../assets/img/comida.jpg);
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 80px);
 }
-.segunda-foto p {
+main section.segunda-foto p {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -143,54 +153,250 @@ main section .texto-contactos h2 {
 }
 
 /*fin cuerpo del sitio*/
-/*cuerpo pag de productos*/
-main div h2.titulo-productos {
-  text-align: center;
+main div.pag-productos {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  gap: 30px;
-}
-main div section.grids {
-  display: grid;
+  background: url(../assets/img/productos1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 500px 500px;
-  row-gap: 50px;
-  column-gap: 10px;
-  background-color: black;
-  padding: 20px 40px 0px 40px;
+  height: 500px;
 }
-main div section.grids .imagen-uno {
-  background-image: url(../assets/img/productos1.jpg);
-  background-size: cover;
+main div.pag-productos h2 {
+  padding-left: 230px;
+  font-size: 2.5rem;
+  font-weight: 2rem;
+  text-shadow: 2px 2px 5px #58544d;
 }
-main div section.grids .imagen-dos {
-  background-image: url(../assets/img/productos2.jpg);
-  background-size: cover;
+main div.pag-productos a {
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  z-index: 1;
 }
-main div section.grids .imagen-tres {
-  background-image: url(../assets/img/productos3.jpg);
-  background-size: cover;
+main div.pag-productos p {
+  justify-self: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 2rem;
+  text-shadow: 2px 2px 5px #58544d;
 }
-main div section.grids .imagen-cuatro {
-  background-image: url(../assets/img/productos4.jpg);
-  background-size: cover;
-}
-main div section.grids .imagen-cinco {
-  background-image: url(../assets/img/frutas.jpg);
-  background-size: cover;
-}
-main div section.grids .imagen-seis {
-  background-image: url(../assets/img/producto6.png);
-  background-size: cover;
-}
-main div section.grids .boton {
+main div.semillas {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  background-color: rgba(168, 167, 167, 0.59);
-  border-radius: 20px;
-  padding: 10px;
+  align-items: center;
+  background: url(../assets/img/semillas2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+main div.semillas h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 2rem;
+  text-shadow: 2px 2px 5px #58544d;
+}
+main div.semillas a {
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  z-index: 1;
+}
+main div.semillas a {
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  z-index: 1;
+}
+main div.semillas a.active, main div.semillas a:hover {
+  background-color: rgba(128, 128, 128, 0.548);
+  transition: 0.5s;
+}
+main div.frutos-secos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url(../assets/img/frutos-secos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+main div.frutos-secos h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 2rem;
+  text-shadow: 2px 2px 5px #58544d;
+}
+main div.frutos-secos a {
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  z-index: 1;
+}
+main div.frutos-secos a.active, main div.frutos-secos a:hover {
+  background-color: rgba(128, 128, 128, 0.548);
+  transition: 0.5s;
+}
+main div.condimentos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url(../assets/img/condimentos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+main div.condimentos h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 2rem;
+  text-shadow: 2px 2px 5px #58544d;
+}
+main div.condimentos a {
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  z-index: 1;
+}
+main div.condimentos a.active, main div.condimentos a:hover {
+  background-color: rgba(128, 128, 128, 0.548);
+  transition: 0.5s;
+}
+main div.suplementos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url(../assets/img/suplementos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+main div.suplementos h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 2rem;
+  text-shadow: 2px 2px 5px #58544d;
+}
+main div.suplementos a {
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  z-index: 1;
+}
+main div.suplementos a.active, main div.suplementos a:hover {
+  background-color: rgba(128, 128, 128, 0.548);
+  transition: 0.5s;
+}
+main div.especias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url(../assets/img/especiass.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+main div.especias h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 2rem;
+  text-shadow: 2px 2px 5px #58544d;
+}
+main div.especias a {
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  z-index: 1;
+}
+main div.especias a.active, main div.especias a:hover {
+  background-color: rgba(128, 128, 128, 0.548);
+  transition: 0.5s;
+}
+main div.cereales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url(../assets/img/cereales.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+main div.cereales h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 2rem;
+  text-shadow: 2px 2px 5px #58544d;
+}
+main div.cereales a {
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+  z-index: 1;
+}
+main div.cereales a.active, main div.cereales a:hover {
+  background-color: rgba(128, 128, 128, 0.548);
+  transition: 0.5s;
 }
 
 /*cuerpo pag de quienes somos*/
@@ -217,48 +423,44 @@ main section div.textos-quienes p {
 
 /*comienzo pie de pagina*/
 footer {
-  background-color: black;
-  display: flex;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
   text-align: center;
-}
-footer .pie {
+  align-items: center;
+  justify-content: center;
+  line-height: 2rem;
+  font-size: 1rem;
+  padding: 0px;
   display: flex;
+  width: 100%;
+  background-color: black;
 }
-footer a {
+footer ul {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 20px;
+}
+footer ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 15px 5px;
+}
+footer ul li a {
   color: white;
-  font-size: 10px;
+  font-size: 1.1rem;
   padding: 7px 13px;
   border-radius: 3px;
 }
+footer p {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 2rem;
+  font-size: 1rem;
+  padding: 0px;
+  display: flex;
+  width: 100%;
+}
 
-@media (max-width: 320px) {
-  footer {
-    width: 100%;
-    font-size: 7px;
-  }
-}
-@media (max-width: 600px) {
-  footer {
-    width: 100%;
-  }
-  footer div {
-    display: flex;
-  }
-  footer div p {
-    font-size: 10px;
-  }
-}
-@media (max-width: 768px) {
-  footer div {
-    display: flex;
-  }
-  footer div p {
-    font-size: 0.8rem;
-  }
-}
 /*media query index*/
 @media (max-width: 1024px) {
   main {
@@ -340,6 +542,37 @@ footer a {
 @media (max-width: 768px) {
   .texto-contactos h2 {
     font-size: 30px;
+  }
+}
+/*media footer*/
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    background-color: black;
+  }
+  footer ul {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+  }
+  footer ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 15px 5px;
+  }
+  footer ul li a {
+    color: white;
+    font-size: 1.1rem;
+    padding: 7px 13px;
+    border-radius: 3px;
   }
 }
 /*media query header*/
@@ -536,6 +769,16 @@ footer a {
     padding: 10px;
     display: flex;
     width: 100%;
+  }
+}
+/*media footer*/
+@media (max-width: 320px) {
+  footer ul li a {
+    font-size: 1.1rem;
+    padding: none;
+  }
+  footer p {
+    font-size: 0.9rem;
   }
 }
 

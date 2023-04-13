@@ -8,3 +8,14 @@
     display: flex;
     width: 100%;
 }
+@mixin productos{
+    color: white;
+            font-size: 1.1rem;
+            border-radius: 3px;
+            position: relative;
+            display: block;
+            padding: 10px 10px;
+            text-decoration: none;
+            transition: .5s;
+            z-index: 1;
+}

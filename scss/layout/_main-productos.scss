@@ -1,58 +1,191 @@
-/*cuerpo pag de productos*/
 main{
-     div{
-        h2.titulo-productos{
-            text-align: center;
-            justify-content: center;
+    div.pag-productos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: url(../assets/img/productos1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        h2{
+            padding-left: 230px;
+            font-size: 2.5rem;
+            font-weight: 2rem;
+            text-shadow:  2px 2px 5px #58544d;
+        }
+        a{
+            @include productos;
+        }
+        p{
+            justify-self: center;
             align-items: center;
             font-size: 2rem;
-            gap: 30px;
-        }  
-        section.grids{
-            display: grid;
-            width: $width;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 500px 500px;
-            row-gap: 50px;
-            column-gap: 10px;
-            background-color: $fondo;
-            padding: 20px 40px 0px 40px;
-            .imagen-uno{
-                background-image: url(../assets/img/productos1.jpg);
-                background-size: $cover;
-
-            }
-            .imagen-dos{
-                background-image: url(../assets/img/productos2.jpg);
-                background-size: $cover;
-
-            }
-            .imagen-tres{
-                background-image: url(../assets/img/productos3.jpg);
-                background-size: $cover;
-
-            }
-            .imagen-cuatro{
-                background-image: url(../assets/img/productos4.jpg);
-                background-size: $cover;
-
-            }
-            .imagen-cinco{
-                background-image: url(../assets/img/frutas.jpg);
-                background-size: $cover;
-
-            }
-            .imagen-seis{
-                background-image: url(../assets/img/producto6.png);
-                background-size: $cover;
-            }
-            .boton{
-                display: $flex;
-                justify-content: center;
-                background-color: rgba(168, 167, 167, 0.59);
-                border-radius: 20px;
-                padding: 10px;
-            }
+            font-weight: 2rem;
+            text-shadow:  2px 2px 5px #58544d;
+        }
+    }
+    div.semillas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: url(../assets/img/semillas2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        h2{
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 2rem;
+            text-shadow:  2px 2px 5px #58544d;
+        }
+        a{
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 3px;
+            position: relative;
+            display: block;
+            padding: 10px 10px;
+            text-decoration: none;
+            transition: .5s;
+            z-index: 1;
+        }
+        a{
+            @include productos;
+        }
+        a.active, a:hover{
+            background-color: rgba(128, 128, 128, 0.548);
+            transition: .5s;
+        }   
+    }
+    div.frutos-secos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: url(../assets/img/frutos-secos.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        h2{
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 2rem;
+            text-shadow:  2px 2px 5px #58544d;
+        }
+        a{
+            @include productos;
+        }
+        a.active, a:hover{
+            background-color: rgba(128, 128, 128, 0.548);
+            transition: .5s;
+        } 
+    }
+    div.condimentos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: url(../assets/img/condimentos.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        h2{
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 2rem;
+            text-shadow:  2px 2px 5px #58544d;
+        }
+        a{
+            @include productos;
+        }
+        a.active, a:hover{
+            background-color: rgba(128, 128, 128, 0.548);
+            transition: .5s;
+        } 
+    }
+    div.suplementos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: url(../assets/img/suplementos.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        h2{
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 2rem;
+            text-shadow:  2px 2px 5px #58544d;
+        }
+        a{
+            @include productos;
+        }
+        a.active, a:hover{
+            background-color: rgba(128, 128, 128, 0.548);
+            transition: .5s;
+        } 
+    }
+    div.especias{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: url(../assets/img/especiass.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        h2{
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 2rem;
+            text-shadow:  2px 2px 5px #58544d;
+        }
+        a{
+            @include productos;
+        }
+        a.active, a:hover{
+            background-color: rgba(128, 128, 128, 0.548);
+            transition: .5s;
+        } 
+    }
+    div.cereales{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: url(../assets/img/cereales.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        h2{
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 2rem;
+            text-shadow:  2px 2px 5px #58544d;
+        }
+        a{
+            @include productos;
+        }
+        a.active, a:hover{
+            background-color: rgba(128, 128, 128, 0.548);
+            transition: .5s;
         } 
     }
 }

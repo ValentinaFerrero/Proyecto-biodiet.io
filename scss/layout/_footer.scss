@@ -1,47 +1,26 @@
 /*comienzo pie de pagina*/
 
 footer{
+    @include centrado (1rem, 0px);
     background-color: $fondo;
-    display: $flex;
-    padding: 20px;
-    width: $width;
-    height: 100%;
-    text-align: center;
-    .pie{
-        display: $flex;
-    }
-    a{
-        color: white;
-        font-size: 10px;
-        padding: 7px 13px;
-        border-radius: 3px;
-    }
-}    
-
-@media (max-width: 320px){
-    footer{
-        width: $width;
-        font-size: 7px;
-    }
-}
-
-@media (max-width:600px){
-    footer{
-        width: $width;
-        div{
-            display: $flex;
-            p{
-                font-size: 10px;
+    ul{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 20px;
+        li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 15px 5px;
+            a{
+                color: white;
+                font-size: 1.1rem;
+                padding: 7px 13px;
+                border-radius: 3px;
             }
-        }
+        }      
     }
-}
-
-@media (max-width:768px){
-    footer div{
-        display: $flex;
-        p{
-            font-size: 0.8rem;
-        }
+    p{
+        @include centrado (1rem, 0px);
     }
 }

@@ -1,7 +1,7 @@
 header{
     nav{
         background-color: $fondo;
-        height: 80px;
+        height: 90px;
         width: $width;
         .enlace{
             position: absolute;
@@ -11,22 +11,29 @@ header{
             height: 50px;
         }
         ul{
-            float: right;
-            margin-right: 20px;
+            position: absolute;
+            top: 0px;
+            left: 700px;
+            display: flex;
             li{
                 display: inline-block;
-                line-height: 80px;
-                margin: 15px 5px;
+                line-height: 20px;
+                margin: 25px 5px;
                 a{
                     color: white;
                     font-size: 1.1rem;
-                    padding: 7px 13px;
                     border-radius: 3px;
+                    position: relative;
+                    display: block;
+                    padding: 10px 10px;
+                    text-decoration: none;
+                    transition: .5s;
+                    z-index: 1;
                 }
                 a.active, a:hover{
                     background-color: gray;
                     transition: .5s;
-                }
+                }   
             }
         }
         .checkbtn{

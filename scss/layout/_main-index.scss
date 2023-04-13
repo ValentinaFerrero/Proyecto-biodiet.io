@@ -45,9 +45,12 @@ main{
         
         
     }
-    
-}
-    .segunda-foto{
+    section.carrusel-index{
+        background-size: cover;
+        margin: 5px 0px;
+        
+    }
+    section.segunda-foto{
         background: url(../assets/img/comida.jpg);
         background-size: cover;
         background-position: center center;
@@ -56,4 +59,4 @@ main{
             @include centrado(25px, 170px);
         }
     }
-
+}
