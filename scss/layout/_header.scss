@@ -11,9 +11,9 @@ header{
             height: 50px;
         }
         ul{
-            position: absolute;
+            float: right;
             top: 0px;
-            left: 700px;
+            left: 800px;
             display: flex;
             li{
                 display: inline-block;
@@ -28,7 +28,7 @@ header{
                     padding: 10px 10px;
                     text-decoration: none;
                     transition: .5s;
-                    z-index: 1;
+                    
                 }
                 a.active, a:hover{
                     background-color: gray;

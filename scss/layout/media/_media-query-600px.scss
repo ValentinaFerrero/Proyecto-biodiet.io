@@ -1,46 +1,43 @@
 /*media query header*/
 @media (max-width: 600px){
-    nav{
-        position: fixed;
-        label.checkbtn{
+    header{
+        nav{
+            position: fixed;
+            ul{
+                display: block;
+                width: $width;
+                height: 100vh;
+                background-color: rgb(0, 0, 0);
+                top: 70px;
+                left: -100%;
+                text-align: left;
+                transition: all .5s;
+                position: absolute;
+                li{
+                    display: flex;
+                    line-height: 5px;
+                    a{
+                        font-size: 15px;
+                        text-decoration: underline;
+                    }
+                    a:hover, a.active{
+                        background: none;
+                        color: rgb(230, 11, 11);
+                    }
+                }
+            }
+            input#check:checked ~ ul{
+                left:0;
+            }
+            label.checkbtn{
                 display: block;
             }
-        label i{
+            label i{
                 font-size: 20px;
                 padding-top: 40px;
             }
-        
-        ul{
-            display: block;
-            width: $width;
-            height: 100vh;
-            background-color: rgb(0, 0, 0);
-            top: 80px;
-            left: -100%;
-            text-align: center;
-            transition: all .5s;
-            position: absolute;
-            li{
-                display: flex;
-                margin: 50px 0;
-                line-height: 5px;
-                a:hover{
-                    font-size: 50px;
-                    background: none;
-                    color: rgb(230, 11, 11);
-                }
-                .active{
-                    background: none;
-                    color: rgb(230, 11, 11);
-                }
-            }
         }
-        input#check:checked ~ ul{
-                left:0;
-            }
-        
     }
-    
 }
 
 /*media query main index*/
@@ -84,6 +81,50 @@
                 p{
                     @include centrado(1rem, 10px);
                 }
+            }
+        }
+    }
+}
+
+@media (max-width:600px){
+    main{
+        div.pag-productos{
+            h2{
+                font-size: 2rem;
+                padding-left: 130px;
+            }
+            p{
+                font-size: 1.4rem;
+            }
+        }
+        div.semillas{
+            h2{
+                font-size: 2rem;
+            }
+        }
+        div.frutos-secos{
+            h2{
+                font-size: 2rem;
+            }
+        }
+        div.condimentos{
+            h2{
+                font-size: 2rem;
+            }
+        }
+        div.suplementos{
+            h2{
+                font-size: 2rem;
+            }
+        }
+        div.especias{
+            h2{
+                font-size: 2rem;
+            }
+        }
+        div.cereales{
+            h2{
+                font-size: 2rem;
             }
         }
     }
