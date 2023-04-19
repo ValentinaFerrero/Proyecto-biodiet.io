@@ -102,7 +102,7 @@ main .contenedor-index p {
 }
 main section.carrusel-index {
   background-size: cover;
-  margin: 5px 0px;
+  margin: 1px;
 }
 main section.segunda-foto {
   background: url(../assets/img/comida.jpg);
@@ -183,7 +183,6 @@ main div.pag-productos a {
   color: white;
   font-size: 1.1rem;
   border-radius: 3px;
-  position: relative;
   display: block;
   padding: 10px 10px;
   text-decoration: none;
@@ -220,7 +219,6 @@ main a {
   color: white;
   font-size: 1.1rem;
   border-radius: 3px;
-  position: relative;
   display: block;
   padding: 10px 10px;
   text-decoration: none;
@@ -254,7 +252,6 @@ main div.frutos-secos a {
   color: white;
   font-size: 1.1rem;
   border-radius: 3px;
-  position: relative;
   display: block;
   padding: 10px 10px;
   text-decoration: none;
@@ -288,7 +285,6 @@ main div.condimentos a {
   color: white;
   font-size: 1.1rem;
   border-radius: 3px;
-  position: relative;
   display: block;
   padding: 10px 10px;
   text-decoration: none;
@@ -322,7 +318,6 @@ main div.suplementos a {
   color: white;
   font-size: 1.1rem;
   border-radius: 3px;
-  position: relative;
   display: block;
   padding: 10px 10px;
   text-decoration: none;
@@ -356,7 +351,6 @@ main div.especias a {
   color: white;
   font-size: 1.1rem;
   border-radius: 3px;
-  position: relative;
   display: block;
   padding: 10px 10px;
   text-decoration: none;
@@ -390,7 +384,6 @@ main div.cereales a {
   color: white;
   font-size: 1.1rem;
   border-radius: 3px;
-  position: relative;
   display: block;
   padding: 10px 10px;
   text-decoration: none;
