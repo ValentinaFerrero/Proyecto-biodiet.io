@@ -9,6 +9,7 @@
 }
 
 header nav {
+  z-index: 1;
   background-color: black;
   height: 90px;
   width: 100%;
@@ -688,11 +689,11 @@ footer p {
   }
   main section.contenedor-index div h2 {
     font-size: 30px;
-    padding: 100px 0px 0px 30px;
+    padding: 110px 0px 0px 30px;
   }
   main section.contenedor-index div h3 {
     font-size: 23px;
-    padding: 5px 0px 0px 30px;
+    padding: 0px 0px 0px 30px;
   }
   main section.contenedor-index div p {
     font-size: 16px;

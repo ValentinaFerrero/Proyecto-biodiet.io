@@ -6,11 +6,11 @@
             div{
                 h2{
                     font-size: 30px;
-                    padding: 100px 0px 0px 30px;
+                    padding: 110px 0px 0px 30px;
                 }
                 h3{
                     font-size: 23px;
-                    padding: 5px 0px 0px 30px;
+                    padding: 0px 0px 0px 30px;
                 }
                 p{
                     font-size: 16px;
@@ -76,8 +76,6 @@
 }
 
 /*main envios*/
-
-
 @media(max-width:495px){
     .contenedor-envios{
         padding: 130px 50px;
